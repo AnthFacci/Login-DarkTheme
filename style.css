@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(34, 34, 34);
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.container{
+       min-height: 100vh;
+       display: flex;
+       flex-direction: column;
+}
+
+/* HEADER */
+
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    align-items: center;
+    height: 120px;
+}
+
+.title{
+    font-size: 25px;
+    color: white;
+}
+
+.navbar{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.navbar .btn{
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    transition: 0.4s;
+}
+
+.border{
+    border: 1px solid rgb(132,14, 201);
+    border-radius: 15px;
+}
+
+.navbar .border:hover{
+    background-color: white;
+    color: black;
+}
+
+.bar a{
+    position: relative;
+}
+
+.bar a::after{
+    content: " ";
+    width: 0%;
+    height: 4px;
+    background-color: rgb(132,14, 201);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.6s;
+}
+
+.bar a:hover::after{
+    width: 100%;
+}
+
+/* MAIN CONTENT */
+
+.maincontent{
+    flex: 1 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+.leftcontent{
+   display: flex;
+   flex-direction: column;
+   gap: 25px;
+   
+}
+
+.cab h1{
+    color: white;
+    font-size: 45px;
+    
+}
+
+#edit{
+    color: rgb(132,14, 201);
+}
+
+.leftcontent p{
+    color: white;
+    font-weight: 600;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+form #N{
+    background-color: white;
+    border: 0 solid transparent;
+    border-radius: 15px;
+    width: 290px;
+    height: 35px;
+}
+
+form #E{
+    background-color: white;
+    border: 0 solid transparent;
+    border-radius: 15px;
+    width: 290px;
+    height: 35px;
+}
+
+input::placeholder{
+    padding: 8px;
+}
+
+#btnM{
+    width: 200px;
+    background-color: rgb(132,14, 201);
+    height: 38px;
+    border-radius: 15px;
+    border: 0px solid black;
+    transition: transform 0.5s ease;
+    margin-left: 7px;
+    
+}
+
+
+#btnM:hover{
+    color: white;
+    transform: scale(1.1);
+}
